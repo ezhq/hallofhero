@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HallOfHero</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Slide Img -->
+    <div class="seegear">
+
+        <div class="slide" data-imgsnum="3" data-imgactiveindex="0">
+
+            <!-- imgs -->
+            <a href="https://playoverwatch.com/en-us/" target="_blank">
+                <img id="id-slideimg-0" class="slide-img slide-img-active" src="img/01.jpg" alt=""></a>
+            <a href="https://playhearthstone.com/en-us/" target="_blank">
+                <img id="id-slideimg-1" class="slide-img" src="img/02.jpg" alt=""></a>
+            <a href="https://play.na.leagueoflegends.com/en_US" target="_blank">
+                <img id="id-slideimg-2" class="slide-img" src="img/03.jpg" alt=""></a>
+
+
+            <button class="slide-button slide-button-left vertical-center" data-offset="-1">&lt;</button>
+            <button class="slide-button slide-button-right vertical-center" data-offset="1">&gt;</button>
+
+            <div class="slide-dots">
+                <div id="id-slidedot-0" data-dotindex="0" class="slide-dot slide-dot-active"></div>
+                <div id="id-slidedot-1" data-dotindex="1" class="slide-dot"></div>
+                <div id="id-slidedot-2" data-dotindex="2" class="slide-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <script>
+        bubbly({
+            colorStart: "#fff4e6",
+            colorStop: "#ffe9e4",
+            blur: 1,
+            compose: "source-over",
+            bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+        });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

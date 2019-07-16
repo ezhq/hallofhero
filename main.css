@@ -1,0 +1,102 @@
+/* basic */
+.seegear {
+    /* background-color: #32CD79; */
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* slide */
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+    transition: box-shadow 0.2s ease-in-out;
+    /* background-color: rgb(110, 110, 110); */
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.slide:hover {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 8px 16px 0px rgba(0, 0, 0, 0.1), 0 16px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* slide img */
+.slide-img {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    border-radius: 20px;
+
+    bottom: 0px;
+}
+.slide-img-active {
+    display: inline-block;
+}
+
+/* slide button */
+.slide-button {
+    width: 30px;
+    height: 50px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    color: white;
+    background: black;
+    opacity: 0.5;
+
+}
+.slide-button:hover {
+    cursor: pointer;
+
+    color: black;
+    background: #FEEDE5;
+    opacity: 0.6;
+}
+.slide-button.slide-button-left {
+    left: 0;
+}
+.slide-button.slide-button-right {
+    right: 0;
+}
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* slide dots */
+.slide-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    text-align: center;
+}
+.slide-dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    background: white;
+    opacity: 0.6;
+    box-shadow: 0px 0px 4px 2px grey;
+    /* box-shadow: 10px 10px 5px 0px red; */
+}
+.slide-dot-active {
+    background: #32CD79;
+    opacity: 0.8;
+    box-shadow: 0px 0px 4px 2px white;
+}
+.slide-dot:hover {
+    cursor: pointer;
+    opacity: 1;
+}
