@@ -1,5 +1,5 @@
 # Hall Of Hero
-基于 JavaScript 的网页轮播图组件。
+基于 JavaScript 的网页轮播图组件。  
 *A SlideShow by JavaScript.*
 
 # Live Demo
