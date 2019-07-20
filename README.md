@@ -1,5 +1,6 @@
 # Hall Of Hero
-A SlideShow by JavaScript.
+基于 JavaScript 的网页轮播图组件。
+*A SlideShow by JavaScript.*
 
 # Live Demo
 [Hall Of Hero](http://aurdes.com/hallofhero/ "在当前页面打开此演示项目，若想在新标签页打开，请通过 [Ctrl + 单击此链接] 或 [鼠标中键点击此链接] 进行访问.")
